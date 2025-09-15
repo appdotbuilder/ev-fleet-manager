@@ -76,6 +76,30 @@ export default function Welcome({ auth }: Props) {
                                 📊 View API Docs
                             </Button>
                         </div>
+
+                        {/* Live Stats Preview */}
+                        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto border border-gray-200">
+                            <h3 className="text-lg font-semibold text-gray-900 mb-4 text-center">
+                                🌍 Platform Activity (Live Demo)
+                            </h3>
+                            <div className="grid grid-cols-3 gap-6">
+                                <div className="text-center">
+                                    <div className="text-2xl font-bold text-green-600">1,247</div>
+                                    <div className="text-sm text-gray-600">Active Vehicles</div>
+                                    <div className="text-xs text-green-500 mt-1">↗ +15 today</div>
+                                </div>
+                                <div className="text-center">
+                                    <div className="text-2xl font-bold text-blue-600">850</div>
+                                    <div className="text-sm text-gray-600">Online Drivers</div>
+                                    <div className="text-xs text-blue-500 mt-1">↗ +23 this hour</div>
+                                </div>
+                                <div className="text-center">
+                                    <div className="text-2xl font-bold text-purple-600">78%</div>
+                                    <div className="text-sm text-gray-600">Avg Battery Level</div>
+                                    <div className="text-xs text-purple-500 mt-1">🔋 Optimal</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
